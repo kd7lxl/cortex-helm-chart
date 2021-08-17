@@ -171,8 +171,6 @@ data:
 
 ## Requirements
 
-Kubernetes: `^1.19.0-0`
-
 | Repository | Name | Version |
 |------------|------|---------|
 | https://charts.bitnami.com/bitnami | memcached(memcached) | 5.13.0 |
