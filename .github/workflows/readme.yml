@@ -4,7 +4,7 @@ on:
   push:
     branches-ignore:
       - main
-      - master
+      - master # hmm, these could cause problems for people who make a PR from their master branch
     paths:
       - values.yaml
 
@@ -16,6 +16,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
+          token: ${{ secrets.bot_PAT }}
 
       - name: Generate README.md
         run: |
